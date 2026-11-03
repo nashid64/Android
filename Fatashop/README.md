@@ -2,7 +2,7 @@
 
 A simple single-vendor e-commerce Android app where customers can browse and buy a variety of products. Built natively with Kotlin and powered by Firebase.
 
-> The merchant (vendor) app is maintained as a separate project.
+> The merchant (vendor) app is maintained as a separate project. [FatashopMerchant](../FatashopMerchant)
 
 ## Features
 
