@@ -36,7 +36,7 @@ Fatashop/
 
 ## Related Projects
 
-- Merchant app: 
+- Merchant app:  [FatashopMerchant](../FatashopMerchant)
 
 ## Author
 
