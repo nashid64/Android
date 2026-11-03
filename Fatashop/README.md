@@ -36,7 +36,7 @@ Fatashop/
 
 ## Related Projects
 
-- Merchant app: _coming soon_
+- Merchant app: 
 
 ## Author
 
