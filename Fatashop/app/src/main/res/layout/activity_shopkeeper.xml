@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Shop name -->
+    <TextView
+        android:id="@+id/shopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Shop"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Product Name -->
+    <EditText
+        android:id="@+id/productName"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Product Name"
+        android:background="@drawable/input_bg"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/shopName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Product Price -->
+    <EditText
+        android:id="@+id/productPrice"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        android:background="@drawable/input_bg"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/productName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- Product Image (placeholder) -->
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_person_placehold"
+        android:background="@drawable/circle_bg"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/productPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Upload Image -->
+    <TextView
+        android:id="@+id/uploadProductImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Product Image"
+        android:textColor="#4A6CF7"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/productPrice"
+        app:layout_constraintStart_toEndOf="@id/productImage" />
+
+    <!-- Add Product Button -->
+    <Button
+        android:id="@+id/addProductBtn"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Add Product"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/productImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Product List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/addProductBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
