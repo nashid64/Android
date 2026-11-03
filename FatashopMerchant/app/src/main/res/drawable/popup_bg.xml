@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#00FFFFFF" /> <!-- Fully transparent base -->
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#80FF9800" /> <!-- Orange with 50% opacity for subtle tint -->
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#33FFFFFF" /> <!-- White with 20% opacity for blur effect -->
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+</layer-list>
+

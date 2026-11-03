@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_bg"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingTop="40dp"
+    android:paddingBottom="20dp"
+    android:elevation="1dp"
+    android:columnCount="3"
+    android:rowCount="3"
+    android:alignmentMode="alignMargins"
+    android:useDefaultMargins="true"
+    android:gravity="center">
+
+    <!-- Profile -->
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_row="0"
+        android:layout_column="0">
+        <ImageView
+            android:id="@+id/icProfile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_menu_myplaces"
+            android:contentDescription="@string/profile"
+            android:background="#FFCC80"
+            android:padding="8dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Accounts -->
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_row="0"
+        android:layout_column="1">
+        <ImageView
+            android:id="@+id/icAccounts"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_menu_agenda"
+            android:contentDescription="@string/accounts"
+            android:background="#FFCC80"
+            android:padding="8dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/accounts"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Security -->
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_row="0"
+        android:layout_column="2">
+        <ImageView
+            android:id="@+id/icSecurity"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_lock_lock"
+            android:contentDescription="@string/security"
+            android:background="#FFCC80"
+            android:padding="8dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/security"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Privacy Policy -->
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_row="1"
+        android:layout_column="0">
+        <ImageView
+            android:id="@+id/icPrivacyPolicy"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_menu_info_details"
+            android:contentDescription="@string/privacy_policy"
+            android:background="#FFCC80"
+            android:padding="8dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy_policy"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Logout -->
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_row="1"
+        android:layout_column="1">
+        <ImageView
+            android:id="@+id/icLogout"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_lock_power_off"
+            android:contentDescription="@string/logout"
+            android:background="#FFCC80"
+            android:padding="8dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Help -->
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_row="1"
+        android:layout_column="2">
+        <ImageView
+            android:id="@+id/icHelp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_menu_help"
+            android:contentDescription="@string/help_support"
+            android:background="#FFCC80"
+            android:padding="8dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/help_support"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Settings -->
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_row="2"
+        android:layout_column="0">
+        <ImageView
+            android:id="@+id/icSettings"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_menu_manage"
+            android:contentDescription="@string/settings"
+            android:background="#FFCC80"
+            android:padding="8dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- About -->
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_row="2"
+        android:layout_column="1">
+        <ImageView
+            android:id="@+id/icAbout"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_menu_info_details"
+            android:contentDescription="@string/about_app"
+            android:background="#FFCC80"
+            android:padding="8dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_app"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Empty cell for symmetry -->
+    <View
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_row="2"
+        android:layout_column="2" />
+
+</GridLayout>
